@@ -1,0 +1,25 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,208,56,235"/>
+<area shape="rect" id="node2" href="$a02774.html#a910a3f2f41867bd01f06de491b027cb6" title=" " alt="" coords="147,5,258,32"/>
+<area shape="rect" id="node3" href="$a02774.html#a15adcfc70c666f5c8956da799c8a4d87" title=" " alt="" coords="135,56,271,83"/>
+<area shape="rect" id="node4" href="$a02774.html#a810caaa83c83118a51bdbd1d87fa0417" title=" " alt="" coords="104,107,301,133"/>
+<area shape="rect" id="node5" href="$a02774.html#a616fcadd22b9cd625a67e92655bf4ddc" title=" " alt="" coords="139,157,267,184"/>
+<area shape="rect" id="node6" href="$a02780.html#a38d673c9b86ef5f29d594b97dead643c" title=" " alt="" coords="371,309,518,336"/>
+<area shape="rect" id="node10" href="$a02780.html#a7001b65489bfd4a40ff63a555d05c81e" title=" " alt="" coords="139,487,267,513"/>
+<area shape="rect" id="node20" href="$a02780.html#abbde3f132da66139171770b548e74115" title=" " alt="" coords="385,208,505,235"/>
+<area shape="rect" id="node21" href="$a02780.html#ab661028e61eb99047701639cfae95025" title=" " alt="" coords="139,385,267,412"/>
+<area shape="rect" id="node23" href="$a02780.html#a93a569500f40b14dbeaf9f41bbf50ca4" title=" " alt="" coords="385,259,505,285"/>
+<area shape="rect" id="node7" href="$a02744.html#a2a508a68c916a8f9f4c251863980fe1a" title=" " alt="" coords="860,411,1009,437"/>
+<area shape="rect" id="node8" href="$a02750.html#a952f07d62dc943137800664bdb611cd4" title=" " alt="" coords="653,461,731,488"/>
+<area shape="rect" id="node9" href="$a02750.html#a98047d060c242396d1bb682126ee780d" title=" " alt="" coords="884,461,985,488"/>
+<area shape="rect" id="node11" href="$a02774.html#a7232dd041375d6585b39999c2b807fd4" title=" " alt="" coords="389,461,501,488"/>
+<area shape="rect" id="node12" href="$a02780.html#a38ea1d523e49e9e0e5eb7235a7dea3e5" title="Subsystem2 (simulation) functions." alt="" coords="362,606,527,647"/>
+<area shape="rect" id="node13" href="$a02744.html#a7ac095b73b6f061fca0a81a0517a4035" title=" " alt="" coords="588,664,796,691"/>
+<area shape="rect" id="node16" href="$a02750.html#a19ffdfbb88b7984ac489cbf8445a34dc" title=" " alt="" coords="644,715,740,741"/>
+<area shape="rect" id="node17" href="$a02750.html#a693db29fcd97c6145cc6742e1bb23d69" title="Shows full display contents." alt="" coords="631,765,753,792"/>
+<area shape="rect" id="node19" href="$a02756.html#af43404a599f52e449ff203f6998d75f2" title="Initialises the keyboard (KYB) subsystem." alt="" coords="644,613,740,640"/>
+<area shape="rect" id="node14" href="$a02744.html#aef4781d6f153f66cdb02cb770d407dc7" title=" " alt="" coords="844,639,1025,665"/>
+<area shape="rect" id="node15" href="$a02756.html#a751036558cf089782c54d6bd7ad5f3e3" title="Empty input buffer (stdin)." alt="" coords="896,689,973,716"/>
+<area shape="rect" id="node18" href="$a02750.html#ae1ebaffe2e4dd794cc5b80d20dd5c8fb" title="Clears full display (terminal) by executing a terminal command." alt="" coords="896,765,973,792"/>
+<area shape="rect" id="node22" href="$a02780.html#a52d0bce2893ca38cc825ec18bd4eefb0" title="Subsystem2 (simulation) functions." alt="" coords="349,411,540,437"/>
+</map>

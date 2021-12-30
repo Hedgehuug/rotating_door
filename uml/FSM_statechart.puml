@@ -1,0 +1,14 @@
+@startuml
+title Framework\nStatechart\n
+[*] --> S_STATE1 : E_START
+            S_STATE1 : OnEntry STATE1 Actions
+            S_STATE1 : OnExit STATE1 exit Actions
+        S_STATE1 --> S_STATE2 : E_EVENT1
+            S_STATE2 : OnEntry STATE1 Actions
+            S_STATE2 : OnExit STATE1 exit Actions
+        S_STATE2 --> S_STATE1 : E_EVENT2
+            S_STATE2 : OnEntry Unlock gate (gate)
+            S_STATE2 : OnEntry WaitForPass() (gate)
+S_STATE1 --> [*] : E_EVENT3
+S_STATE2 --> [*] : E_EVENT3
+@enduml

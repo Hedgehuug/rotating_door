@@ -1,0 +1,36 @@
+@startuml
+
+title Turnstile\nLayered architecture\n
+
+package "User Interface Layer" {
+    [Display]
+    [Keyboard]
+    [Development\nConsole] #green
+}
+
+package "System Control Layer" {
+    [FSM] #red
+}
+
+package "Subsystems Layer" {
+    [SUBSYSTEM1]
+    [SUBSYSTEM2]
+}
+
+package "Hardware Abstraction Layer = HAL" {
+    [Hardware IO] #grey
+}
+
+[FSM] -down-> [SUBSYSTEM1]
+[FSM] -down-> [SUBSYSTEM1]
+[FSM] -up-> [Display]
+[FSM] -up-> [Keyboard]
+[FSM] -up-> [Development\nConsole]
+[SUBSYSTEM1] --> [Hardware IO]
+[SUBSYSTEM1] --> [Hardware IO]
+[Development\nConsole] -down-> [Keyboard]
+[Development\nConsole] -down-> [Display]
+[Display] --> [Hardware IO]
+[Keyboard] --> [Hardware IO]
+
+@enduml

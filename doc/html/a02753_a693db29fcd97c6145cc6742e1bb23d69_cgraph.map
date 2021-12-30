@@ -1,0 +1,4 @@
+<map id="DSPshowDisplay" name="DSPshowDisplay">
+<area shape="rect" id="node1" title="Shows full display contents." alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node2" href="$a02750.html#ae1ebaffe2e4dd794cc5b80d20dd5c8fb" title="Clears full display (terminal) by executing a terminal command." alt="" coords="176,5,253,32"/>
+</map>

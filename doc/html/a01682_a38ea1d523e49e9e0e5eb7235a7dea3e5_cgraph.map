@@ -1,0 +1,13 @@
+<map id="SubSystem1InitialisationSimulation" name="SubSystem1InitialisationSimulation">
+<area shape="rect" id="node1" title="Subsystem2 (simulation) functions." alt="" coords="5,150,171,191"/>
+<area shape="rect" id="node2" href="$a01646.html#a2a508a68c916a8f9f4c251863980fe1a" title=" " alt="" coords="491,183,640,209"/>
+<area shape="rect" id="node3" href="$a01646.html#a7ac095b73b6f061fca0a81a0517a4035" title=" " alt="" coords="219,31,427,57"/>
+<area shape="rect" id="node6" href="$a01652.html#a19ffdfbb88b7984ac489cbf8445a34dc" title=" " alt="" coords="275,132,371,159"/>
+<area shape="rect" id="node7" href="$a01652.html#a952f07d62dc943137800664bdb611cd4" title=" " alt="" coords="283,233,362,260"/>
+<area shape="rect" id="node9" href="$a01652.html#a693db29fcd97c6145cc6742e1bb23d69" title="Shows full display contents." alt="" coords="261,284,384,311"/>
+<area shape="rect" id="node11" href="$a01658.html#af43404a599f52e449ff203f6998d75f2" title="Initialises the keyboard (KYB) subsystem." alt="" coords="275,183,371,209"/>
+<area shape="rect" id="node4" href="$a01646.html#aef4781d6f153f66cdb02cb770d407dc7" title=" " alt="" coords="475,5,656,32"/>
+<area shape="rect" id="node5" href="$a01658.html#a751036558cf089782c54d6bd7ad5f3e3" title="Empty input buffer (stdin)." alt="" coords="527,56,604,83"/>
+<area shape="rect" id="node8" href="$a01652.html#a98047d060c242396d1bb682126ee780d" title=" " alt="" coords="515,233,616,260"/>
+<area shape="rect" id="node10" href="$a01652.html#ae1ebaffe2e4dd794cc5b80d20dd5c8fb" title="Clears full display (terminal) by executing a terminal command." alt="" coords="527,284,604,311"/>
+</map>
