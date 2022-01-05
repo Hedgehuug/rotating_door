@@ -93,12 +93,15 @@ void FSM_AddTransition(const transition_t *transition)
    if(transition_cnt == MAX_TRANSITIONS)
    {
       // Error, too many transitions
+      printf("\n ERROR ------- TOO MANY TRANSITIONS");
       return;
    }
 
    // Copy the transition and save locally
-   memcpy(&transitions[transition_cnt], transition, sizeof(transition_t));
-
+   memcpy(&transitions[transition_cnt], transition, sizeof(transition_t));   
+//   for (int i = 0; i < transition_cnt; i++){
+//       printf("%s --> %s : %s",&transitions[i].from,&transitions[i].to,&transitions[i].event);
+//   }
    ++transition_cnt;
    numOfTransitions++;
 }

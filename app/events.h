@@ -4,9 +4,6 @@
 typedef enum {
     E_NO,                ///< Used for initialisation of an event variable
     E_START,
-    E_EVENT1,
-    E_EVENT2,
-    E_EVENT3,
     E_INIT,
     E_O_SLIDING,
     E_O_SPINNING,

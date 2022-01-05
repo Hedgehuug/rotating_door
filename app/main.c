@@ -43,20 +43,19 @@ void delay_us(uint32_t d);
 // Main
 int main(void)
 {
-
    /// Define the state machine model
    /// First the state and the pointer to the onEntry and onExit functions
    //           State                           onEntry()               onExit()
-   FSM_AddState(S_START,      &(state_funcs_t){  NULL,                  NULL});
-   FSM_AddState(S_INIT,     &(state_funcs_t){  S_State1_onEntry,      S_State1_onExit });
-   FSM_AddState(S_CLOSED,     &(state_funcs_t){  S_State2_onEntry,      S_State2_onExit });
-   FSM_AddState(S_ERROR,   &(state_funcs_t){  S_Shutdown_onEntry,    NULL            });
-   FSM_AddState(S_O_SPINNING, &(state_funcs_t){ NULL, NULL});
-   FSM_AddState(S_O_SLIDING, &(state_funcs_t){ NULL, NULL});
-   FSM_AddState(S_LOCKED, &(state_funcs_t){ NULL, NULL});
+//   FSM_AddState(S_START,      &(state_funcs_t){  NULL,                  NULL});
+//   FSM_AddState(S_INIT,     &(state_funcs_t){  S_State1_onEntry,      S_State1_onExit });
+//   FSM_AddState(S_CLOSED,     &(state_funcs_t){  S_State2_onEntry,      S_State2_onExit });
+//   FSM_AddState(S_ERROR,   &(state_funcs_t){  S_Shutdown_onEntry,    NULL            });
+//   FSM_AddState(S_O_SPINNING, &(state_funcs_t){ NULL, NULL});
+//   FSM_AddState(S_O_SLIDING, &(state_funcs_t){ NULL, NULL});
+//   FSM_AddState(S_LOCKED, &(state_funcs_t){ NULL, NULL});
 
    /// Second the transitions
-   //                                 From            Event                To
+   //                                 From      Event   To
    // Init Transitions
    FSM_AddTransition(&(transition_t){ S_START, E_INIT, S_INIT });
    FSM_AddTransition(&(transition_t){ S_INIT, E_O_SLIDING, S_O_SLIDING });
@@ -79,7 +78,7 @@ int main(void)
 
 
    // Should unexpected events in a state be flushed or not?
-   FSM_FlushEnexpectedEvents(true);
+   FSM_FlushEnexpectedEvents(false);
 
    /// Start the state machine
 ///   FSM_RunStateMachine(S_START, E_START);
@@ -103,7 +102,7 @@ void S_State1_onEntry(void)
    /// Simulate the initialisation
    nextevent = SubSystem1InitialisationSimulation();
 
-   FSM_AddEvent(nextevent);           /// Internal generated event
+   //FSM_AddEvent(nextevent);           /// Internal generated event
 }
 
 void S_State1_onExit(void)
@@ -120,7 +119,7 @@ void S_State2_onEntry(void)
 
    DCSdebugSystemInfo("Current state: %s\n", stateEnumToText[state]);
 
-   FSM_AddEvent(nextevent);           /// Internal generated event
+   //FSM_AddEvent(nextevent);           /// Internal generated event
 }
 
 void S_State2_onExit(void)
@@ -152,18 +151,18 @@ event_t SubSystem1InitialisationSimulation(void)
          DSPshow(2,"System Initialized No errors");
          DCSdebugSystemInfo("Example debug message going to next state");
          DCSdebugSystemInfo("Return with event E_EVENT1");
-         return(E_EVENT1);
+         return(E_START);
          break;
       case '2':
          DSPshow(2,"System Initialized error! System Shutdown");
          DCSdebugSystemInfo("Example debug message going to next state");
          DCSdebugSystemInfo("Return with event E_EVENT2");
-         return(E_EVENT2);
+         return(E_START);
          break;
       default:
          DCSdebugSystemInfo("Undefined this should not happen");
          DCSdebugSystemInfo("Return with event E_EVENT3");
-         return(E_EVENT3);
+         return(E_START);
    }
 }
 
@@ -176,16 +175,16 @@ event_t SubSystem2EventSimulation(void)
    {
       case 'A':
          DSPshow(3,"Event2 is selected");
-         return(E_EVENT2);
+         return(E_START);
          break;
       case 'B':
          DSPshow(3,"Event3 is selected");
-         return(E_EVENT3);
+         return(E_START);
          break;
       default:
          DCSdebugSystemInfo("Undefined this should not happen");
          DCSdebugSystemInfo("Return with event E_EVENT3");
-         return(E_EVENT3);
+         return(E_START);
    }
 }
 

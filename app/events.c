@@ -3,7 +3,6 @@ char * eventEnumToText[] =
 {
     "E_NO",                ///< Used for initialisation of an event variable
     "E_START",
-    "E_EVENT3",               ///< End the statemachine
     "E_INIT",
     "E_O_SLIDING",
     "E_O_SPINNING",
