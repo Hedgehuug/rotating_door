@@ -36,9 +36,11 @@ state_t FSM_EventHandler(const state_t state, const event_t event)
    {
       // Is the state equal to the from state?
       if(transitions[i].from == state)
+          //printf("match from state");
       {
          // And is the event equal to the event?
          if(transitions[i].event == event)
+             //printf("match event");
          {
             // Execute the from state onExit() function
             if(state_funcs[transitions[i].from].onExit != NULL)
@@ -182,7 +184,7 @@ void FSM_RunStateMachine(state_t state, event_t start_event)
    FSM_AddEvent(start_event);    // Machine is switched on
 
    while(1)
-   {
+    {
       if(!FSM_NoEvents())
       {
          // Get the event and handle it

@@ -10,7 +10,8 @@ typedef enum {
     E_CLOSE,
     E_ERROR,
     E_LOCK,
-    E_UNLOCK
+    E_UNLOCK,
+    E_SHUTDOWN
 } event_t;
 
 #endif

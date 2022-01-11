@@ -12,7 +12,7 @@ char * stateEnumToText[] =
     "S_O_SPINNING",
     "S_CLOSED",
     "S_LOCKED",
-    "S_ERROR"
+    "S_ERROR",
 };
 
 
